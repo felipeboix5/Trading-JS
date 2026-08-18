@@ -1,46 +1,46 @@
 # Trading Uruguay 📈🇺🇾
 
-Aplicación web de simulación de trading (compra/venta de acciones, gestión de portafolio, historial de transacciones y cotizaciones simuladas), pensada para inversores uruguayos que se están iniciando en el tema.
+A web-based trading simulator (stock buy/sell, portfolio management, transaction history, and simulated quotes) built for Uruguayan investors just getting started with trading. The project's main focus is on **code quality, maintainability, and software engineering best practices**, rather than just feature delivery.
 
-Proyecto desarrollado para la materia **Fundamentos de Ingeniería de Software (FIS)** — ORT Uruguay, en equipo con Juan Pagliotti y Felipe Boix.
+Developed for the **Software Engineering Fundamentals (FIS)** course — ORT Uruguay, as a team with Juan Pagliotti.
 
-## Funcionalidades
+## Features
 
-- **Simulación de compra/venta de acciones**, con mini-portafolio visible en la misma sección.
-- **Gestión de portafolio**: valor total del patrimonio, ganancia diaria y cantidad de inversiones activas.
-- **Historial de transacciones**: registro de todos los movimientos (compras y ventas) realizados.
-- **Cotizaciones simuladas**: visualización de precios, nombre y tendencia de las distintas acciones disponibles.
+- **Stock buy/sell simulation**, with a mini-portfolio view visible in the same section.
+- **Portfolio management**: total investment value, daily profit, and number of active investments.
+- **Transaction history**: a record of every buy and sell movement made in the system.
+- **Simulated quotes**: view of prices, names, and market trend for each available stock.
 
-## Stack técnico
+## Tech stack
 
-- JavaScript vanilla (ES Modules), HTML y CSS
-- Arquitectura separada en `domain` (lógica de negocio) e `interface` (UI)
-- **Jest** para testing unitario, con cobertura de código
-- **ESLint + Prettier** para calidad y consistencia de código
+- Vanilla JavaScript (ES Modules), HTML, and CSS
+- Clean architecture split into `domain` (business logic) and `interface` (UI)
+- **Jest** for unit testing, with code coverage
+- **ESLint + Prettier** enforced for code quality and consistency
 
-## Estructura del proyecto
+## Project structure
 
-- `src/domain/`: lógica de negocio (portafolio, transacciones, historial) y sus tests.
-- `src/interface/`: interfaz de usuario (HTML, CSS, JS) y assets.
-- `docs/`: documentación del proceso — investigación, decisiones de diseño, usabilidad/accesibilidad (heurísticas de Nielsen, WCAG AAA), calidad de código y testing.
+- `src/domain/`: business logic (portfolio, transactions, history) and its tests.
+- `src/interface/`: user interface (HTML, CSS, JS) and assets.
+- `docs/`: process documentation — research, design decisions, usability/accessibility (Nielsen heuristics, WCAG AAA), code quality, and testing.
 
-## Documentación
+## Documentation
 
-| Informe | Descripción |
+| Report | Description |
 | :--- | :--- |
-| [`informe_1`](docs/informe_1.md) | Investigación inicial, estructura del repo y estrategia de trabajo en equipo. |
-| [`informe_2`](docs/informe_2.md) | Funcionalidades implementadas, usabilidad/accesibilidad y calidad de código. |
-| [`informe_testing`](docs/informe_testing.md) | Estrategia y cobertura de testing. |
+| [`informe_1`](docs/informe_1.md) | Initial research, repo structure, and team workflow strategy. |
+| [`informe_2`](docs/informe_2.md) | Implemented features, usability/accessibility, and code quality. |
+| [`informe_testing`](docs/informe_testing.md) | Testing strategy and coverage. |
 
-## Cómo correrlo
+## How to run it
 
-```bash
+\`\`\`bash
 npm install
-npm test        # corre los tests con cobertura
-```
+npm test        # runs the tests with coverage
+\`\`\`
 
-Para ver la interfaz, abrir `src/interface/index.html` en el navegador.
+To view the UI, open `src/interface/index.html` in your browser.
 
 ## Screenshots
 
-Capturas de las distintas secciones disponibles en `src/interface/img/` y `docs/anexo/img/`.
+Screenshots of the different sections are available in `src/interface/img/` and `docs/anexo/img/`.
